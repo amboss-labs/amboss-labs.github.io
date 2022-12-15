@@ -11,9 +11,21 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
     <script src="https://cdn.tryretool.com/embed.js"> </script>
+    <style>
+      body {
+    margin: 0;
+}
+iframe {
+    display: block;
+    background: #000;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}
+    </style>
   </head>
   <body>
-    <div style="height: 100%; width: 100%;" id='container'></div>
+    <div id='container'></div>
 
     <script>
     var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://medicuja.retool.com/embedded/public/d1bb5d0e-2dd6-42b8-b1b9-72a3db75cb19')
